@@ -1,9 +1,5 @@
 
 function sumArray(numbers){
-    // - sumArray: given an array of numbers, add up all the numbers for 
-	// - example: [1, 5, 3, 2, 6]
-    //         - returns 17
-    // numbers = [1, 5, 3, 2, 6]
     let sumNumbers= 0;
     for(let i = 0; i < numbers.length; i++){
         sumNumbers = numbers[i] + sumNumbers;
@@ -28,9 +24,6 @@ return addedNumbers;
 }
 
 function getAllNamesShorterThan(names, numberOfNames){
-    // - getAllNamesShorterThan: Given an array of names and a value, return an array of only the names shorter than the given value for example:
-    //     - input['Clyde', 'Sue', 'Jerry', 'Jo'], 4
-    //         - return ['Sue', 'Jo']
     let selectedNames = [];
     for(let i = 0; i < names.length; i++){
         if(names[i].length <= numberOfNames){
@@ -43,11 +36,8 @@ function getAllNamesShorterThan(names, numberOfNames){
 
 function makeLabel(nameObject){
     return (`Miss ${nameObject.givenName} ${nameObject.familyName} ${nameObject['home address'].streetNumber} ${nameObject['home address'].streetName} ${nameObject['home address'].city} ${nameObject['home address'].state} ${nameObject['home address'].zip}`);
-// return "Miss. "+nameObject.givenName+"";
 }
 
-
-// - given an object with data for a person in it, generate a shipping label in the following form:
 var namesArray = ['Clyde', 'Sue', 'Jerry', 'Jo']
 
 
